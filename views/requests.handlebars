@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>DiversiFriends</title>
+
+			<div id="titlebar">
+			<p>DiversiFriends</p>
+			</div>
+
+			<!--Below is import for css stylesheet-->
+			<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+<body>
+ 
+<div id="navbar">
+		<a href="index"><img border="0" src="http://i.imgur.com/1mJUYE7t.jpg" width="100" height="100"></a>
+		<a href="requests"><img border="0" src="http://i.imgur.com/wEJrBmEt.jpg" width="100" height="100"></a>
+		<a href="friends"><img border="0" src="http://i.imgur.com/BhLwskrt.jpg" width="100" height="100"></a>
+		<a href="profile"><img border="0" src="http://i.imgur.com/0z7pXiit.jpg" width="100" height="100"></a>
+		<a href="login"><img border="0" src="http://i.imgur.com/zj4aZRRt.jpg" width="100" height="100"></a>
+	</div>
+
+<div id="headings">
+	<h1>Your Connection Requests!</h1>
+	<p>These people want to connect with you!</p>
+	
+	<!--<select>
+		<option value="politics"> Politics</option> 
+		<option value="religon"> Religon</option>
+		<option value="culture"> Culture</option>
+	</select>-->
+</div>
+	
+	<!-- Add click listener for the selector above to get the value....when we get the value, send a get request to the "backend" through AJAX, and the backend pass in some other value.
+
+	1. setup click listner
+	2. setup ajax
+	3. setup backend routes
+	4. test backend routes-->
+
+	<div id="contentBox">
+		<div>
+			{{#each requests}}
+      			<div id="requestPreview" id="{{id}}">
+          			<img src="{{imageURL}}" width="15%" ... />
+          			<p>{{name}}</p>
+          			<p>{{description}}</p>
+          			
+
+          			<div class="acceptConnection"><button>Accept Connection Request</button></div>
+
+
+      			</div>
+    		{{/each}}
+
+			<script src="https://code.jquery.com/jquery.js"></script>
+			<script src="js/bootstrap.js"></script>
+			<script src="js/hci-friends.js"></script>
+		</div>
+	</div>
+
+</body>
+</html>
