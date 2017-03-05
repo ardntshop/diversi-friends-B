@@ -53,6 +53,10 @@ p {
     text-align: center;
 }
 
+.hideRequest {
+    text-align: center;
+}
+
 .acceptConnection {
     text-align: center;
 }

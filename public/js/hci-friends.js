@@ -18,26 +18,40 @@ $('.connectionRequestButtons').click(function() {
 	alert("Your Connect Request has been sent!");
 });
 
+$('.acceptConnection').click(function() {
+	var name = $(this).attr("name");
+	$.get('/acceptConnection?name='+name, acceptConnectionCallback);
+	$(this).parent().parent().hide();
+	alert("You have accepted the connection! They will be added to your friends list.");
+});
+
+
 $('.hideProfile').click(function() {
 	var name = $(this).attr("name");
 	$.get('/hideMatch?name='+name, hideMatchCallback);
+	$(this).parent().parent().hide();
+});
+
+$('.hideRequest').click(function() {
+	var name = $(this).attr("name");
+	$.get('/hideRequest?name='+name, hideRequestCallback);
 	
 	$(this).parent().parent().hide();
-	//document.getElementById(name).hidden=true;
-	//alert("You have hidden the profile for "+name);
 });
 
 
 
-
-
-
+//callbacks
 function hideMatchCallback(result){
 }
 
-$('.acceptConnection').click(function() {
-	alert("You have accepted the connection. ");
-});
+function hideRequestCallback(result){
+}
+
+function acceptConnectionCallback(){	
+}
+
+
 
 $('.removeFriend').click(function() {
 	alert("You have removed the friend from your list.");

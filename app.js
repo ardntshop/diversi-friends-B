@@ -17,6 +17,8 @@ var index = require('./routes/index');
 var profile = require('./routes/profile');
 var friends = require('./routes/friends');
 var hideMatch = require('./routes/hideMatch');
+var hideRequest = require('./routes/hideRequest');
+var acceptConnection = require('./routes/acceptConnection');
 var showConnectionRequest = require('./routes/showConnectionRequest');
 
 
@@ -57,6 +59,8 @@ app.get('/friends', friends.view);
 //write JSON data (Added by Tommy 2/28):
 //app.post('/requests/:id', requests.declineRequest);
 app.get('/hideMatch', hideMatch.view);
+app.get('/hideRequest', hideRequest.view);
+app.get('/acceptConnection', acceptConnection.view);
 app.get('/showConnectionRequest', showConnectionRequest.view);
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -2,9 +2,10 @@
 /*
  * GET Friends page.
  */
- var data = require('../data.json');
-
 
 exports.view = function(req, res){
-  res.render('friends', data);
+
+	var fs = require('fs');
+	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+  	res.render('friends', data);
 };

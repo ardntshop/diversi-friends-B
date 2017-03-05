@@ -14,44 +14,42 @@
 <body>
  
 <div id="navbar">
-		<a href="index"><img border="0" src="http://i.imgur.com/1mJUYE7t.jpg" width="100" height="100"></a>
-		<a href="requests"><img border="0" src="http://i.imgur.com/wEJrBmEt.jpg" width="100" height="100"></a>
-		<a href="friends"><img border="0" src="http://i.imgur.com/BhLwskrt.jpg" width="100" height="100"></a>
-		<a href="profile"><img border="0" src="http://i.imgur.com/0z7pXiit.jpg" width="100" height="100"></a>
-		<a href="login"><img border="0" src="http://i.imgur.com/zj4aZRRt.jpg" width="100" height="100"></a>
+		<a href="index"><img border="0" src="http://i.imgur.com/1mJUYE7.jpg" width="90%"></a>
+		<a href="requests"><img border="0" src="http://i.imgur.com/wEJrBmE.jpgg" width="90%"></a>
+		<a href="friends"><img border="0" src="http://i.imgur.com/BhLwskr.jpg" width="90%"></a>
+		<a href="profile"><img border="0" src="http://i.imgur.com/0z7pXii.jpg" width="90%"></a>
+		<a href="login"><img border="0" src="http://i.imgur.com/zj4aZRR.jpg" width="90%"></a>
 	</div>
 
 <div id="headings">
 	<h1>Your Connection Requests!</h1>
 	<p>These people want to connect with you!</p>
-	
-	<!--<select>
-		<option value="politics"> Politics</option> 
-		<option value="religon"> Religon</option>
-		<option value="culture"> Culture</option>
-	</select>-->
 </div>
 	
-	<!-- Add click listener for the selector above to get the value....when we get the value, send a get request to the "backend" through AJAX, and the backend pass in some other value.
 
-	1. setup click listner
-	2. setup ajax
-	3. setup backend routes
-	4. test backend routes-->
-
-	<div id="contentBox">
-		<div>
-			{{#each requests}}
-      			<div id="requestPreview" id="{{id}}">
+<div id="contentBox">
+	<div>
+		{{#each requests}}
+			{{#if display}}
+      		<div id="{{name}}">
+      			<div id="requestPreview">
           			<img src="{{imageURL}}" width="15%" ... />
           			<p>{{name}}</p>
           			<p>{{description}}</p>
+
+          			{{#if display}}
+          			<div class="acceptConnection" name="{{name}}"> <button>Accept Connection Request</button></div>
+          			{{/if}}
           			
+          			<div class="hideRequest" name="{{name}}"><button>Remove This Request</button>
 
-          			<div class="acceptConnection"><button>Accept Connection Request</button></div>
 
+          			</div>
+          			</div>
+          			</div>
 
       			</div>
+      			{{/if}}
     		{{/each}}
 
 			<script src="https://code.jquery.com/jquery.js"></script>
