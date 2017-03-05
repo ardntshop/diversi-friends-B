@@ -20,6 +20,7 @@ var hideMatch = require('./routes/hideMatch');
 var hideRequest = require('./routes/hideRequest');
 var acceptConnection = require('./routes/acceptConnection');
 var showConnectionRequest = require('./routes/showConnectionRequest');
+var hideFriend = require('./routes/hideFriend');
 
 
 var app = express();
@@ -62,6 +63,7 @@ app.get('/hideMatch', hideMatch.view);
 app.get('/hideRequest', hideRequest.view);
 app.get('/acceptConnection', acceptConnection.view);
 app.get('/showConnectionRequest', showConnectionRequest.view);
+app.get('/hideFriend', hideFriend.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

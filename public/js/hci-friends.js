@@ -39,6 +39,13 @@ $('.hideRequest').click(function() {
 	$(this).parent().parent().hide();
 });
 
+$('.hideFriend').click(function() {
+	var name = $(this).attr("name");
+	$.get('/hideFriend?name='+name, hideFriendCallback);
+	
+	$(this).parent().parent().hide();
+});
+
 
 
 //callbacks
@@ -49,6 +56,9 @@ function hideRequestCallback(result){
 }
 
 function acceptConnectionCallback(){	
+}
+
+function hideFriendCallback(){	
 }
 
 
