@@ -5,21 +5,21 @@
  //var data = require('../data.json');
 //var fs = require('fs');
 //var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-
+var bVersion = require('../bVersion.json');
 
  exports.viewBVersion = function(req, res){
 	var fs = require('fs');
 	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
- 	var bVersion = true;
- 	res.render('index', data)
+	bVersion['bVersion'] = true;
+ 	res.render('index', bVersion)
  }
 
 exports.view = function(req, res){
 
 	var fs = require('fs');
 	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-	var bVersion = false;
+	bVersion['bVersion'] = false;
   	res.render('index', data);
 };
 

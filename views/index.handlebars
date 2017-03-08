@@ -25,12 +25,17 @@
 
 {{#if bVersion}}
 	<div id="headings">
-		<h1>Your DiversiMatches</h1>
+		{{#each bVersion}}
+			<div>
+			<h1>{{headings}}</h1>
+			</div>
+		{{/each}}	
 	</div>
 
 	<div id="headings">
 		<h1>Your DiversiMatches</h1>
 		<!--<button>test</button>-->
+		</div>
 
 {{else}}	
 
