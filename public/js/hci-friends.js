@@ -46,6 +46,11 @@ $('.hideFriend').click(function() {
 	$(this).parent().parent().hide();
 });
 
+$('.updatePersonalStatement').click(function(){
+	var personalStatement = $(this).attr("personalStatement");
+	$.get('/updatePersonalStatement='+personalStatement, updatePersonalStatementCallback);
+});
+
 
 
 //callbacks
@@ -59,6 +64,9 @@ function acceptConnectionCallback(){
 }
 
 function hideFriendCallback(){	
+}
+
+function updatePersonalStatementCallback(){
 }
 
 

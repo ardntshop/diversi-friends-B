@@ -3,7 +3,7 @@
  * GET Requests Page.
  */
 
- 
+ var data = require('../data.json');
 
 exports.view = function(req, res){
 	var fs = require('fs');
@@ -12,19 +12,3 @@ exports.view = function(req, res){
 };
 
 
-
-
-
-
-/* if
-	
-	decline request button = clicked
-
-	then
-
-	remove profile from requests screen
-
-	else
-
-	leave profile alone
-*/

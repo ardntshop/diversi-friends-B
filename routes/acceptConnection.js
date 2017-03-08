@@ -12,8 +12,8 @@ exports.view = function(req, res){
 			data.requests[i].display = false;
 		
 
-for (var i = 0; i < data.friends.length; i++) {
-		if (data.friends[i].name == req.query.name) {
+		for (var i = 0; i < data.friends.length; i++) {
+			if (data.friends[i].name == req.query.name) {
 			data.friends[i].display = true;
 		}
 
