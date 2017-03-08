@@ -52,7 +52,8 @@ $('.updatePersonalStatement').click(function(){
 });
 
 $('.bVersion').click(function(){
-
+	//alert("test for click listener");
+	//ga("send", "event", "bVersion", "click")''
 });
 
 
