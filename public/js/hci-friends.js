@@ -51,6 +51,15 @@ $('.updatePersonalStatement').click(function(){
 	$.get('/updatePersonalStatement='+personalStatement, updatePersonalStatementCallback);
 });
 
+$('.bVersion').click(function(){
+
+});
+
+
+
+
+
+
 
 
 //callbacks

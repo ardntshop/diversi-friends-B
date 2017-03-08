@@ -22,7 +22,7 @@ var acceptConnection = require('./routes/acceptConnection');
 var showConnectionRequest = require('./routes/showConnectionRequest');
 var hideFriend = require('./routes/hideFriend');
 var updatePersonalStatement = require('./routes/updatePersonalStatement');
-var indexb = require('./routes/indexb');
+//var indexb = require('./routes/indexb');
 
 
 var app = express();
@@ -58,7 +58,8 @@ app.get('/requests', requests.view);
 app.get('/index', index.view);
 app.get('/profile', profile.view);
 app.get('/friends', friends.view);
-app.get('/indexb', indexb.view);
+//app.get('/indexb', indexb.view);
+app.get('/bVersion', index.viewBVersion);
 
 //write JSON data (Added by Tommy 2/28):
 //app.post('/requests/:id', requests.declineRequest);

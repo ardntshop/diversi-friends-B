@@ -6,9 +6,9 @@
 //var fs = require('fs');
 //var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
-exports.view = function(req, res){
+//exports.view = function(req, res){
 
-	var fs = require('fs');
-	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-  	res.render('indexb', data);
-};
+//	var fs = require('fs');
+//	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+//  	res.render('indexb', data);
+//};
