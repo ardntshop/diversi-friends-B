@@ -11,7 +11,7 @@
 	var fs = require('fs');
 	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
- 	var bVersion = true;
+ 	var bVersion = false;
  	res.render('index', data)
  }
 
