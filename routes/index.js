@@ -11,7 +11,7 @@
 	var fs = require('fs');
 	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
- 	var bVersion = false;
+ 	var bVersion = true;
  	res.render('index', data)
  }
 
@@ -19,6 +19,7 @@ exports.view = function(req, res){
 
 	var fs = require('fs');
 	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+	var bVersion = false;
   	res.render('index', data);
 };
 
