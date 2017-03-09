@@ -24,7 +24,61 @@
 		},
 		{
 			"name": "Another Guy",
-			"description": "Likes Hillary",
+			"description": "Likes Bernie",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true
+		},
+		{
+			"name": "Yet Another Guy",
+			"description": "Likes Gary Johson",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true
+		},
+		{
+			"name": "Old Dude",
+			"description": "Likes Earl Grey Tea",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true
+		},
+		{
+			"name": "Young for his age Guy",
+			"description": "Likes Sarah Palin",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true
+		},
+		{
+			"name": "Right-hand Man",
+			"description": "Likes Elizabeth Warren",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true
+		},
+		{
+			"name": "This Guy",
+			"description": "Likes Democrats",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true
+		},
+		{
+			"name": "That Guy",
+			"description": "Likes Liberals",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true
+		},
+		{
+			"name": "2 Guys Minus 1 Guy",
+			"description": "Likes Progressives",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true
+		},
+		{
+			"name": "Justa Guy",
+			"description": "Likes Moderates",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true
+		},
+		{
+			"name": "Knowles B Sup",
+			"description": "Likes Conservatives",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
 			"display": true
 		}

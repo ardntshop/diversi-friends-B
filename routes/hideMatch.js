@@ -2,11 +2,12 @@
 /*
  * Hide Match.
  */
+var data = require('../data.json')
 
 exports.view = function(req, res){
 
-	var fs = require('fs');
-	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+	//var fs = require('fs');
+	//var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
 	for (var i = 0; i < data.diversimatches.length; i++) {
 		if (data.diversimatches[i].name == req.query.name) {
