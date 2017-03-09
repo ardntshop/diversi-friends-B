@@ -69,6 +69,7 @@ app.get('/acceptConnection', acceptConnection.view);
 app.get('/showConnectionRequest', showConnectionRequest.view);
 app.get('/hideFriend', hideFriend.view);
 app.post('/updatePersonalStatement', updatePersonalStatement.view);
+app.get('/resetData', login.resetData);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

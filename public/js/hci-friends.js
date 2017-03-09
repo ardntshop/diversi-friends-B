@@ -16,7 +16,6 @@ $('.connectionRequestButtons').click(function() {
 	$.get('/showConnectionRequest?name='+name, null);
 	$(this).hide();
 	alert("Your Connect Request has been sent!");
-	alert("test for AB test click");
 	ga("send", "event", "connectionRequestButtons", "click");
 });
 
