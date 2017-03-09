@@ -45,6 +45,12 @@ p {
     width:80%;
 }
 
+.radioButtons {
+    float: left;
+    position: relative;
+    padding-left: 50px;
+}
+
 .connectionRequestButtons {
     text-align: center;
 }
